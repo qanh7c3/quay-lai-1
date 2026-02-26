@@ -18,11 +18,17 @@ letter-spacing: 0%;
 	background-color: #fffcf4;
 }
 .header.header_top{
+	position: sticky;
+	width: 1170px;
+height: 50px;
+top: 36px;
+left: 135px;
+opacity: 1;
 	justify-content: space-between;
 	display: flex;
 }
 .left-header{
-	margin-left: 136px;
+
 	align-items: baseline;
 	font-size: 3rem;
 	display: inline-flex;
@@ -43,14 +49,30 @@ letter-spacing: 0%;
 	gap: 90px;
 	display: flex;
 }
-.right-header .text{
-	font-family: "Poppins";
+.right-header .text,.right-header .text-1{
+align-self: center;
+font-family: "Poppins";
 font-weight: 400;
 font-style: normal;
 font-size: 1.6rem;
 line-height: 2.8rem;
 letter-spacing: 0%;
-text-align: center;
+color: #5F5B53;
+}
+.right-header .text-1{
+	font-weight: 700;
+	color: black;
+}
+.right-header .text_special{
+position: relative;
+}
+.right-header img{
+position: absolute;
+width: 12px;
+height: 2px;
+opacity: 1;
+border-radius: 1px;
+
 }
 .button-head{
 	display: flex;
@@ -64,6 +86,22 @@ text-align: center;
 	color: white;
 	z-index: 2;
 }
+.right-header .text:hover ,{
+	color: black;
+	text-shadow: 0.8px 0 0 black ;
+
+}
+.right-header .button-head:hover{
+	opacity: 0.7;
+}
 .button-head img{
 	position: absolute;
+width: 144px;
+height: 50px;
+opacity: 1;
+border-radius: 24.5px;
+
+}
+.text_special{
+	align-content: center;
 }
